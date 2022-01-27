@@ -2,30 +2,25 @@ import random
 
 
 class Card:
-    """A card with a different value.
+    """ The card generator will produce a randome card from 1 to 13 that 
+    will be used for the game.
 
-    The responsibility of Card is to keep track of the side value of the card and calculate the points for 
-    it.
-   
     Attributes:
-        value (int): The number on the card.
-    """
+    self.card sets the card value"""
+    # generates a card to be used at call point, returns INT
 
     def __init__(self):
-        """Constructs a new instance of Card.
+        """ Constructs a new instance of car_generator."""
+        # sets default card value
 
-        Args:
-            self (Card): An instance of Card.
-        """
         self.value = random.randint(1, 13)
         self.points = 0
 
     def draw(self, current_card, choice):
-        """Generates a new random value and calculates the points for the Card.
-        
-        Args:
-            self (Card): An instance of Card.
-        """
+        """Method/Function:   
+        This will generate a card from 1 to 13"""
+        # randomly draws a card with values between 1 to 13
+
         self.value = random.randint(1, 13)
 
         if choice == "higher":
