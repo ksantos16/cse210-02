@@ -52,7 +52,7 @@ Support: Craig Conover
 Support: Kira Santos
 
 ## Contact Info
-Caden Campbell, Email: cadecamp9@gmail.com
-Support: Samuel Hootini, Email: shootini28@gmail.com
-Support: Craig Conover, Email: cconover2@byui.edu
-Support: Kira Santos, Email: matt.kira15@gmail.com
+Caden Campbell, Email: cadecamp9@gmail.com, Git Username: GhostLeader119
+Support: Samuel Hootini, Email: shootini28@gmail.com, Git Username: Shots28
+Support: Craig Conover, Email: cconover2@byui.edu, Git Username: cconover2b
+Support: Kira Santos, Email: matt.kira15@gmail.com, Git Username: ksantos16
