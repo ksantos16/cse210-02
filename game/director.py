@@ -8,7 +8,8 @@ class Director:
     List = self.card = [] : this will create a list from the card_generator and hold the values
     Boolean = self.is_playing = True : This is saying the game will continue till the user says (n or NO)
     Int = self.score = 300 : This is the amount you start off with, based on user input the anount will either increase or decrease
-    Boolean = self.playerchoice = None : This will hold false till the user inputs a choice."""
+    card = Card() calls the Card class
+    self.cards.append stores the values of the card atribute."""
 
     def __init__(self):
         """Constructs a new Director.
@@ -29,7 +30,7 @@ class Director:
         Starts running the game and will continue till the user answer no (n) to continue.
 
          Args:
-        self (game_master): An instance of game_master"""
+        self (Director): An instance of Director"""
         # central control function/switchboard
 
         while self.is_playing:
@@ -42,10 +43,10 @@ class Director:
 
     def get_inputs(self):
         """Method/Function:
-        Asks the user if the card that is not displayed yet is y or n
+        Asks the user if they would like to play (y or n)
 
         Args:
-        self (game_master): An instance of game_master"""
+        self (Director): An instance of Director"""
         # gets user inputs
         draw_card = input("Play? [y/n] ")
         self.is_playing = (draw_card == "y")
@@ -53,12 +54,11 @@ class Director:
 
     def do_updates(self):
         """Method/Function:
-        Analyzes if current_car_position is greater than or lesser than self.card
+        Analyzes if current_card_position to new_card which is calling the Card() class program to compare if current_car_position is greater than or lesser than new.card
         and updates current_card.value score based on the users choice of higher or lower and will display 
-        a message and display the current score..
 
          Args:
-        self (game_master): An instance of game_master"""
+        self (Director): An instance of Director"""
         # analyzes score using player input
 
         print(f"Your score is: {self.total_score}\n")
@@ -86,7 +86,7 @@ class Director:
         Will display the new card drawn and your score, else: game is over if user has run out point and chose to end the game.
 
          Args:
-        self (game_master): An instance of game_master
+        self (Director): An instance of Director
         """
         if not self.is_playing:
             return
